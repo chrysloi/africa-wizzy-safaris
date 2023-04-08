@@ -3,8 +3,12 @@ import PackageCard from "./packageCard";
 import "../styles/packages.css";
 import { Layout } from "antd";
 
+interface Package {
+  image: string;
+}
+
 interface Props {
-  packages: Array<Object>;
+  packages: Array<Package>;
   // description: string;
   // style?: {
   //   fontsize?: string;
@@ -23,10 +27,21 @@ const Packages: React.FC<Props> = ({ packages }) => {
       <div className="container">
         {packages.map((item) => {
           return (
+            // <div
+            //   style={{
+            //     // backgroundColor: "red",
+            //     marginRight: "10px",
+            //     marginBottom: "10px",
+            //     borderWidth: "10px",
+            //     borderColor: "#fff",
+            //   }}
+            // >
             <PackageCard
               title="Akagera National Park"
-              description="Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks."
+              description="Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks. Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks. Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks."
+              image={item.image}
             />
+            // </div>
           );
         })}
       </div>

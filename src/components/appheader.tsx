@@ -10,7 +10,7 @@ export const AppHeader: React.FC = () => {
     <Layout.Header
       style={{
         width: "100%",
-        height: "10vh",
+        height: "70px",
         backgroundColor: "#fff",
       }}
     >

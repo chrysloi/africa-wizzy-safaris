@@ -1,0 +1,107 @@
+:root {
+  --curve: 40;
+  --surface-color: #fff;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 450px;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.card_overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+  height: 50%;
+}
+
+.card:hover .card_overlay {
+  transform: translateY(0);
+  max-height: 50%;
+}
+
+.card_header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* gap: 2em; */
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card_arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card_arc path {
+  fill: var(--surface-color);
+}
+
+.card:hover .card_header {
+  transform: translateY(0);
+}
+
+.card_thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card_title {
+  font-size: 1.2em;
+  /* margin: 0 0 0.3em; */
+  color: #212121;
+}
+
+.card_tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.card_status {
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.card_description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #212121;
+  font-family: "MockFlowFont";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  text-overflow: clip;
+  height: 100%;
+}

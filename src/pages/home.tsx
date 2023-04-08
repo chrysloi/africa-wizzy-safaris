@@ -4,7 +4,6 @@ import { Footer } from "../components/footer";
 import { Text } from "../components/text";
 import "../styles/main.css";
 import { SecondaryColor } from "../utils/colors";
-import PackageCard from "../components/packageCard";
 import Packages from "../components/packages";
 
 export const HomePage: React.FC = () => {
@@ -52,7 +51,32 @@ export const HomePage: React.FC = () => {
           Select your Best Package for your Travel
         </Typography>
       </div>
-      <Packages packages={[{ name: 1 }, { name: 2 }, { name: 3 }]} />
+      <Packages
+        packages={[
+          {
+            image: "../assets/giraffe.jpeg",
+          },
+          {
+            image:
+              "https://rwandaecocompany.com/wp-content/uploads/2022/05/boat-at-lake-kivu.jpg",
+          },
+          {
+            image:
+              "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/6c/87/0a.jpg",
+          },
+          {
+            image:
+              "https://rwandaecocompany.com/wp-content/uploads/2022/05/boat-at-lake-kivu.jpg",
+          },
+          {
+            image: "../assets/giraffe.jpeg",
+          },
+          {
+            image:
+              "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/6c/87/0a.jpg",
+          },
+        ]}
+      />
       <Footer />
     </div>
   );
