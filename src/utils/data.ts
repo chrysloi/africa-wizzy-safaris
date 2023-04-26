@@ -1,7 +1,7 @@
 export const packages = [
   {
     image:
-      "https://lh3.googleusercontent.com/10aL49AIXPVIrpYt3ENVFQE2RkDHCpZUq3jo6rtQLlg5PM1vXS0gLt9iWGpw3hq1CADNonEKyEHMlGH1L-aU3OTH3GZB6XELBHQPWahxZdbHsZaaK-qJmEwTGg93oTDrQg=w1280",
+      "https://lh3.googleusercontent.com/4jAIAnFR5K97R5UyddO3vWjtmUXilyeWJQac0OHWFOWMO6wKPA14cnVJQnZEtXlivqMKdTBWavoWPhNf-CICYWc9kglDgzmVssazEn4re-6qoo_6Fto3VPfGGfUFbyc0XA=w1280",
     title: "Nyugwe National Park",
     description:
       "Is one of the oldest rainforests in Africa, Nyungwe is rich in biodiversity and spectacularly beautiful. The mountainous region is teaming with wildlife, including a small population of chimpanzees as well as 12 other species of primate, including the L'Hoest's monkey endemic to the Albertine Rift.",
@@ -43,6 +43,13 @@ export const packages = [
 ];
 
 export const destination = [
+  {
+    image:
+      "https://ugandarwandagorillatours.com/wp-content/uploads/2019/09/Areial-View-Of-Kigali-1.jpg",
+    title: "Kigali",
+    description:
+      "Kigali is the capital city of Rwanda, roughly in the center of the country. It sprawls across numerous hills, ridges and valleys, and has a vibrant restaurant and nightlife scene.",
+  },
   {
     image:
       "https://ugandarwandagorillatours.com/wp-content/uploads/2019/09/Areial-View-Of-Kigali-1.jpg",

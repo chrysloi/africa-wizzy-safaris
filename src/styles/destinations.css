@@ -12,24 +12,25 @@
 .main-container {
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 15px 20px;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* padding: 15px 20px; */
+  padding: 4rem 5vw;
 }
 
 .destination_container {
   display: flex;
   gap: 3rem;
-  margin: 4rem 5vw;
   padding: 0;
   width: 100%;
   overflow-x: scroll;
   /* scroll-behavior: smooth; */
 }
 
-/* ::-webkit-scrollbar {
+.destination_container::-webkit-scrollbar {
   display: inline;
-  width: 0;
-} */
+  height: 0;
+}
 
 .image {
   width: 100%;
