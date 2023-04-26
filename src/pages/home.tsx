@@ -1,10 +1,11 @@
-import { Typography } from "antd";
 import React from "react";
 import { Footer } from "../components/footer";
 import { Text } from "../components/text";
 import "../styles/main.css";
-import { SecondaryColor } from "../utils/colors";
 import Packages from "../components/packages";
+import { destination, packages } from "../utils/data";
+import { SectionTitle } from "../components/sectionTitle";
+import { Destinations } from "../components/destinations";
 
 export const HomePage: React.FC = () => {
   return (
@@ -29,9 +30,9 @@ export const HomePage: React.FC = () => {
           />
         </div>
       </div>
-      <div className="title">
+      {/* <div className="title">
         <Text
-          title="Choose your Package"
+          title=""
           style={{
             fontcolor: SecondaryColor,
             fontsize: "2vw",
@@ -48,35 +49,19 @@ export const HomePage: React.FC = () => {
             textAlign: "center",
           }}
         >
-          Select your Best Package for your Travel
+          
         </Typography>
-      </div>
-      <Packages
-        packages={[
-          {
-            image: "../assets/giraffe.jpeg",
-          },
-          {
-            image:
-              "https://rwandaecocompany.com/wp-content/uploads/2022/05/boat-at-lake-kivu.jpg",
-          },
-          {
-            image:
-              "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/6c/87/0a.jpg",
-          },
-          {
-            image:
-              "https://rwandaecocompany.com/wp-content/uploads/2022/05/boat-at-lake-kivu.jpg",
-          },
-          {
-            image: "../assets/giraffe.jpeg",
-          },
-          {
-            image:
-              "https://media.tacdn.com/media/attractions-splice-spp-674x446/07/6c/87/0a.jpg",
-          },
-        ]}
+      </div> */}
+      <SectionTitle
+        title="Choose your Package"
+        subTitle="Select your Best Package for your Travel"
       />
+      <Packages packages={packages} />
+      <SectionTitle
+        title="Popular Destinations"
+        subTitle="Select Our Best Popular Destinations"
+      />
+      <Destinations destinations={destination} />
       <Footer />
     </div>
   );

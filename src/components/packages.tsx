@@ -5,43 +5,25 @@ import { Layout } from "antd";
 
 interface Package {
   image: string;
+  description: string;
+  title: string;
 }
 
 interface Props {
   packages: Array<Package>;
-  // description: string;
-  // style?: {
-  //   fontsize?: string;
-  //   fontweight?: string;
-  //   fontcolor?: string;
-  //   maxWidth?: string;
-  //   marginBottom?: string;
-  // };
 }
 
 const Packages: React.FC<Props> = ({ packages }) => {
-  console.log(Array.isArray(packages));
-
   return (
-    <Layout.Content className="main-container">
+    <Layout.Content className="packages-container">
       <div className="container">
         {packages.map((item) => {
           return (
-            // <div
-            //   style={{
-            //     // backgroundColor: "red",
-            //     marginRight: "10px",
-            //     marginBottom: "10px",
-            //     borderWidth: "10px",
-            //     borderColor: "#fff",
-            //   }}
-            // >
             <PackageCard
-              title="Akagera National Park"
-              description="Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks. Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks. Visitors to Akagera National Park can take part in a range of activities, including game drives, boat safaris, bird watching, and nature walks."
+              title={item.title}
+              description={item.description}
               image={item.image}
             />
-            // </div>
           );
         })}
       </div>

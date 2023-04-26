@@ -25,16 +25,16 @@
   left: 0;
   right: 0;
   z-index: 1;
-  border-radius: calc(var(--curve) * 1px);
   background-color: var(--surface-color);
   transform: translateY(100%);
   transition: 0.2s ease-in-out;
-  height: 50%;
+  /* height: 50%; */
 }
 
 .card:hover .card_overlay {
   transform: translateY(0);
   max-height: 50%;
+  border-radius: calc(var(--curve) * 1px);
 }
 
 .card_header {
