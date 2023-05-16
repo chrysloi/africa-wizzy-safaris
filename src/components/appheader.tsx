@@ -4,8 +4,28 @@ import Logo from "../assets/Logo.svg";
 import "../styles/appheader.css";
 import { Button } from "./button";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export const AppHeader: React.FC = () => {
+  // const axios = require("axios");
+  let data = JSON.stringify({
+    title: "biology",
+    length: "4 month",
+    instructor: "Tariban",
+    modules: ["Chapter 1"],
+  });
+
+  let config = {
+    method: "post",
+    maxBodyLength: Infinity,
+    url: "http://localhost:8080/api/v1/courses",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
+    data: data,
+  };
+
   return (
     <Layout.Header
       style={{
@@ -36,7 +56,12 @@ export const AppHeader: React.FC = () => {
             <Link to="contact">Contact us</Link>
           </Menu.Item>
         </Menu>
-        <div className="btn">
+        <div
+          className="btn"
+          onClick={() => {
+            axios(config).then(console.log).catch(console.log);
+          }}
+        >
           <Button title="Sign in" />
         </div>
       </div>
