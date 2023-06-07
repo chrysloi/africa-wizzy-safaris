@@ -18,10 +18,10 @@ export const AppHeader: React.FC = () => {
   let config = {
     method: "post",
     maxBodyLength: Infinity,
-    url: "http://localhost:8080/api/v1/courses",
+    url: "http://35.222.255.39:8080/api/v1/courses",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
+      // "Access-Control-Allow-Origin": "*",
     },
     data: data,
   };

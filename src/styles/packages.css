@@ -26,6 +26,7 @@
   overflow: hidden;
   border: 1px solid #e1e1e1;
   position: relative;
+  width: 100%;
   /* display: block; */
   /* border-radius: calc(var(--curve) * 1px); */
   /* text-decoration: none; */
