@@ -12,7 +12,7 @@ interface Props {
 const PackageCard: React.FC<Props> = ({ title, description, image }) => {
   return (
     <Layout.Content className="card">
-      <div className="card_image">
+      <div className="card_image wow fadeInUp">
         <img
           src={
             image.startsWith("http") ? image : require("../assets/giraffe.jpeg")

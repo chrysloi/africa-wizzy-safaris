@@ -1,5 +1,5 @@
 import React from "react";
-// import PackageCard from "./packageCard";
+import PackageCard from "./packageCard";
 import "../styles/packages.css";
 import { Layout } from "antd";
 import { MySwipe } from "./swiper";
@@ -23,7 +23,7 @@ const Packages: React.FC<Props> = ({ packages }) => {
   return (
     <Layout.Content className="packages-container">
       <div className="container">
-        {/* {packages.map((item) => {
+        {packages.map((item) => {
           return (
             <PackageCard
               title={item.title}
@@ -31,8 +31,8 @@ const Packages: React.FC<Props> = ({ packages }) => {
               image={item.image}
             />
           );
-        })} */}
-        <MySwipe slides={packages} />
+        })}
+        {/* <MySwipe slides={packages} /> */}
       </div>
     </Layout.Content>
   );

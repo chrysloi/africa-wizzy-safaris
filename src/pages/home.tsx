@@ -1,11 +1,11 @@
 import React from "react";
-import { Footer } from "../components/footer";
-import { Text } from "../components/text";
+import { Footer } from "../componentsOld/footer";
+import { Text } from "../componentsOld/text";
 import "../styles/main.css";
-import Packages from "../components/packages";
+import Packages from "../componentsOld/packages";
 import { destination, packages } from "../utils/data";
-import { SectionTitle } from "../components/sectionTitle";
-import { Destinations } from "../components/destinations";
+import { SectionTitle } from "../componentsOld/sectionTitle";
+import { Destinations } from "../componentsOld/destinations";
 
 export const HomePage: React.FC = () => {
   return (

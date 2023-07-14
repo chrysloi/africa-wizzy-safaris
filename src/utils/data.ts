@@ -1,8 +1,8 @@
 export const packages = [
   {
     image:
-      "https://lh3.googleusercontent.com/4jAIAnFR5K97R5UyddO3vWjtmUXilyeWJQac0OHWFOWMO6wKPA14cnVJQnZEtXlivqMKdTBWavoWPhNf-CICYWc9kglDgzmVssazEn4re-6qoo_6Fto3VPfGGfUFbyc0XA=w1280",
-    title: "Nyugwe National Park",
+      "https://www.visitrwanda.com/wp-content/uploads/fly-images/3619/canopy-1650x1014.jpg",
+    title: "Nyungwe National Park",
     description:
       "Is one of the oldest rainforests in Africa, Nyungwe is rich in biodiversity and spectacularly beautiful. The mountainous region is teaming with wildlife, including a small population of chimpanzees as well as 12 other species of primate, including the L'Hoest's monkey endemic to the Albertine Rift.",
   },
@@ -42,6 +42,80 @@ export const packages = [
   },
 ];
 
+export const latestPackages = [
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha1.png",
+    date: "7 Day &amp; 6 night",
+    title: "Etiam placerat dictum consequat an pellentesque habitant.",
+    price: "$88.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha2.png",
+    date: "7 Day &amp; 6 night",
+    title: "Varius condimentum consequat frin Aenean pretium risus.",
+    price: "$89.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha3.png",
+    date: "5 Day &amp; 6 night",
+    title: "Praesent sed elit mil In risus nullaam efficitur none.",
+    price: "$99.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha8.png",
+    date: "9 Day &amp; 5 night",
+    title: "San francisco golden gate bridge, cable & fog.",
+    price: "$119.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha11.png",
+    date: "9 Day &amp; 5 night",
+    title: "Pellentesque habitant morbi malesua tristique senectus.",
+    price: "$119.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha10.png",
+    date: "9 Day &amp; 5 night",
+    title: "Sed ultricies sapien arcu, sed cong feugiat sapien.",
+    price: "$199.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha9.png",
+    date: "9 Day &amp; 5 night",
+    title: "Praesent sed elit mil In risus nullaam efficitur none.",
+    price: "$159.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha8.png",
+    date: "9 Day &amp; 5 night",
+    title: "Varius condimentum consequat frin Aenean pretium risus.",
+    price: "$119.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha7.png",
+    date: "9 Day &amp; 5 night",
+    title: "Etiam placerat dictum consequat an pellentesque habitant.",
+    price: "$120.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha6.png",
+    date: "9 Day &amp; 5 night",
+    title: "San francisco golden gate bridge, cable & fog.",
+    price: "$199.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha5.png",
+    date: "2 Day &amp; 3 night",
+    title: "Pellentesque habitant morbi malesua tristique senectus.",
+    price: "$299.00",
+  },
+  {
+    image: process.env.PUBLIC_URL + "/images/package/p-alpha4.png",
+    date: "8 Day &amp; 7 night",
+    title: "Sed ultricies sapien arcu, sed cong feugiat sapien.",
+    price: "$299.00",
+  },
+];
 export const destination = [
   {
     image:
