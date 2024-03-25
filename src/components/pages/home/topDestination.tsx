@@ -1,4 +1,5 @@
 import React from "react";
+import { destination } from "../../../utils/data";
 
 export const TopDestination = () => {
   return (
@@ -6,7 +7,7 @@ export const TopDestination = () => {
       <div className="destination-area destination-style-two pt-110 pb-110">
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-8 col-sm-10 ">
+            <div className="col-lg-8 col-sm-10 " style={{}}>
               <div className="section-head-alpha text-center mx-auto">
                 <h2>Top Destination</h2>
                 <p>
@@ -17,50 +18,70 @@ export const TopDestination = () => {
               </div>
             </div>
           </div>
-          <div className="row d-flex justify-content-center g-4">
-            <div className="col-lg-6 col-md-12 col-sm-10 fadeffect">
-              <DestinationItem
-                image="/images/destination/top-ds1.png"
-                title="Grand Switzerland"
-                place="45 Place"
-              />
+          {destination.length > 0 && (
+            <div className="row d-flex justify-content-center g-4">
+              <div className="col-lg-6 col-md-12 col-sm-10 fadeffect">
+                <DestinationItem
+                  image={"/images/destination/RW_KIGALI.jpg"}
+                  title={"Kigali City"}
+                  place="18 Place"
+                  height={268}
+                />
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-10 fadeffect">
+                <DestinationItem
+                  image={"/images/destination/Nyungwe-National-Park.jpg"}
+                  title={"Southern Province"}
+                  place="20 Place"
+                  height={268}
+                />
+              </div>
+              {/* <div className="col-lg-3 col-md-12 col-sm-10 fadeffect">
+                <DestinationItem
+                  place="35 Place"
+                  // height={268}
+                  imgStyle={{ objectPosition: "center 20%" }}
+                />
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-10 fadeffect">
+                <DestinationItem
+                  image={"/images/destination/top-ds3.png"}
+                  title={destination[2].title}
+                  place="15 Place"
+                />
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-10 fadeffect">
+                <DestinationItem
+                  image={"/images/destination/top-ds4.png"}
+                  title={destination[3] && destination[3].title}
+                  place="25 Place"
+                />
+              </div>
+              <div className="col-lg-3 col-md-6 col-sm-10 fadeffect">
+                <DestinationItem
+                  image={"/images/destination/top-ds5.png"}
+                  title={destination[4] && destination[4].title}
+                  place="10 Place"
+                />
+              </div> */}
+              <div className="col-lg-6 col-md-12 col-sm-10 fadeffect">
+                <DestinationItem
+                  image={"/images/destination/Lake-Ruhondo-In-Rwanda.jpg"}
+                  title={"Northern Province"}
+                  place="8 Place"
+                  height={268}
+                />
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-10 fadeffect">
+                <DestinationItem
+                  image={"/images/destination/akagera.jpg"}
+                  title={"Eastern Province"}
+                  place="15 Place"
+                  height={268}
+                />
+              </div>
             </div>
-            <div className="col-lg-3 col-md-6 col-sm-10 fadeffect">
-              <DestinationItem
-                image="/images/destination/top-ds2.png"
-                title="Paris"
-                place="35 Place"
-              />
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-10 fadeffect">
-              <DestinationItem
-                image="/images/destination/top-ds3.png"
-                title="Augsburg"
-                place="15 Place"
-              />
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-10 fadeffect">
-              <DestinationItem
-                image="/images/destination/top-ds4.png"
-                title="dubai"
-                place="25 Place"
-              />
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-10 fadeffect">
-              <DestinationItem
-                image="/images/destination/top-ds5.png"
-                title="Wiesbaden"
-                place="10 Place"
-              />
-            </div>
-            <div className="col-lg-6 col-md-12 col-sm-10 fadeffect">
-              <DestinationItem
-                image="/images/destination/top-ds6.png"
-                title="UK"
-                place="65 Place"
-              />
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </>
@@ -69,21 +90,24 @@ export const TopDestination = () => {
 const DestinationItem: React.FC<any> = (props) => {
   return (
     <>
-      <div className="destination-item">
-        <div className="destination-img">
+      <div className="destination-item" style={{ height: 268 }}>
+        <div className="destination-img" style={{}}>
           <img
-            src={`${process.env.PUBLIC_URL} ${props.image}`}
-            alt="designation img"
+            src={`${props.image}`}
+            alt={props.title}
+            style={{
+              objectFit: "cover",
+              objectPosition: "center top",
+              height: "100%",
+            }}
           />
         </div>
         <div className="destination-overlay">
           <div className="content">
-            <a href="destination-details.html">
-              <h5>{props.title}</h5>
-            </a>
-            <a href="destination-details.html">
-              <h6>{props.place}</h6>
-            </a>
+            <h5 style={{ cursor: "pointer" }}>{props.title}</h5>
+            <a href=""></a>
+            <h6 style={{ cursor: "pointer" }}>{props.place}</h6>
+            <a href=""></a>
           </div>
         </div>
       </div>

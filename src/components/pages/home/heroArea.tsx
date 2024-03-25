@@ -36,9 +36,10 @@ export const HeroArea = () => {
     <>
       <div className="hero-area hero-style-three">
         <img
-          src={process.env.PUBLIC_URL + "/images/banner/banner-plane.svg"}
+          src={process.env.PUBLIC_URL + "/images/banner/rwanda_air_takeoff.png"}
           className="img-fluid banner-plane"
           alt="banners-img"
+          style={{ height: 70 }}
         />
         <div className="hero-main-wrapper position-relative">
           <div className="hero-social">
@@ -73,16 +74,9 @@ export const HeroArea = () => {
                       <div className="col-lg-8">
                         <div className="hero3-content">
                           <span className="title-top">
-                            Welcome to Africa Wizzy Safaris
+                            Discover a land of thousand hills with Africa Wizzy
                           </span>
-                          <h1>Explore Rwanda</h1>
-                          {/* <p>
-                            Nulla facilisi. Maecenas ac tellus ut ligula
-                            interdum convallis. Nullam dapibus on erat in dolor
-                            posuere, none hendrerit lectus ornare. Suspendisse
-                            sit amet turpina sagittis, ultrices dui et, aliquam
-                            urna.
-                          </p> */}
+                          <h1>Welcome to Rwanda</h1>
                           <Link
                             to={"#"}
                             className="button-fill-primary banner3-btn"
@@ -106,13 +100,6 @@ export const HeroArea = () => {
                             Welcome to Africa Wizzy Safaris
                           </span>
                           <h1>Enjoy Staying in Rwanda</h1>
-                          {/* <p>
-                            Nulla facilisi. Maecenas ac tellus ut ligula
-                            interdum convallis. Nullam dapibus on erat in dolor
-                            posuere, none hendrerit lectus ornare. Suspendisse
-                            sit amet turpina sagittis, ultrices dui et, aliquam
-                            urna.
-                          </p> */}
                           <Link
                             to={"#"}
                             className="button-fill-primary banner3-btn"
@@ -134,7 +121,6 @@ export const HeroArea = () => {
               role="button"
               aria-label="Previous slide"
             >
-              {" "}
               <i className="bi bi-arrow-left" />
             </div>
             <div

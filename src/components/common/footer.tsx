@@ -138,7 +138,7 @@ export const Footer: React.FC<any> = () => {
                 </div>
               </div>
               <div className="col-lg-2 col-md-4">
-                <div className="footer-widget">
+                {/* <div className="footer-widget">
                   <h4 className="footer-widget-title">Tour Type</h4>
                   <ul className="footer-links">
                     <li>
@@ -182,7 +182,7 @@ export const Footer: React.FC<any> = () => {
                       </Link>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </div>
               <>
                 <div className="col-lg-4 col-md-8">
@@ -190,114 +190,68 @@ export const Footer: React.FC<any> = () => {
                   <div className="footer-widget">
                     <h4 className="footer-widget-title text-center">Gallery</h4>
                     <div className="footer-gallary-grid">
-                      <div className="footer-gallary-item">
-                        <a
-                          href={
-                            process.env.PUBLIC_URL +
-                            "/images/gallary/fullsecrron01.png"
-                          }
-                          data-fancybox="footer"
-                          data-caption="Caption Here"
-                        >
-                          <img
-                            src={
-                              process.env.PUBLIC_URL +
-                              "/images/gallary/fg-1.png"
-                            }
-                            alt="footerIMG"
-                          />
-                        </a>
-                      </div>
-                      <div className="footer-gallary-item">
-                        <a
-                          href={
-                            process.env.PUBLIC_URL +
-                            "/images/gallary/fullsecrron02.png"
-                          }
-                          data-fancybox="footer"
-                          data-caption="Caption Here"
-                        >
-                          <img
-                            src={
-                              process.env.PUBLIC_URL +
-                              "/images/gallary/fg-2.png"
-                            }
-                            alt="footerIMG"
-                          />
-                        </a>
-                      </div>
-                      <div className="footer-gallary-item">
-                        <a
-                          href={
-                            process.env.PUBLIC_URL +
-                            "/images/gallary/fullsecrron06.png"
-                          }
-                          data-fancybox="footer"
-                          data-caption="Caption Here"
-                        >
-                          <img
-                            src={
-                              process.env.PUBLIC_URL +
-                              "/images/gallary/fg-3.png"
-                            }
-                            alt="footerIMG"
-                          />
-                        </a>
-                      </div>
-                      <div className="footer-gallary-item">
-                        <a
-                          href={
-                            process.env.PUBLIC_URL +
-                            "/images/gallary/fullsecrron05.png"
-                          }
-                          data-fancybox="footer"
-                          data-caption="Caption Here"
-                        >
-                          <img
-                            src={
-                              process.env.PUBLIC_URL +
-                              "/images/gallary/fg-4.png"
-                            }
-                            alt="footerIMG"
-                          />
-                        </a>
-                      </div>
-                      <div className="footer-gallary-item">
-                        <a
-                          href={
-                            process.env.PUBLIC_URL +
-                            "/images/gallary/fullsecrron03.png"
-                          }
-                          data-fancybox="footer"
-                          data-caption="Caption Here"
-                        >
-                          <img
-                            src={
-                              process.env.PUBLIC_URL +
-                              "/images/gallary/fg-5.png"
-                            }
-                            alt="footerIMG"
-                          />
-                        </a>
-                      </div>
-                      <div className="footer-gallary-item">
-                        <a
-                          href={
-                            process.env.PUBLIC_URL +
-                            "/images/gallary/fullsecrron06.png"
-                          }
-                          data-fancybox="footer"
-                          data-caption="Caption Here"
-                        >
-                          <img
-                            src={
-                              process.env.PUBLIC_URL +
-                              "/images/gallary/fg-6.png"
-                            }
-                            alt="footerIMG"
-                          />
-                        </a>
-                      </div>
+                      <GalleryItem
+                        srcFull={
+                          process.env.PUBLIC_URL +
+                          "/images/gallary/RW_KIGALI.jpg"
+                        }
+                        srcThumb={
+                          process.env.PUBLIC_URL +
+                          "/images/gallary/RW_KIGALI.jpg"
+                        }
+                        caption="Kigali"
+                      />
+                      <GalleryItem
+                        srcFull={
+                          process.env.PUBLIC_URL + "/images/gallary/Musanze.jpg"
+                        }
+                        srcThumb={
+                          process.env.PUBLIC_URL + "/images/gallary/Musanze.jpg"
+                        }
+                        caption="Musanze"
+                        height={75}
+                      />
+                      <GalleryItem
+                        srcFull={
+                          process.env.PUBLIC_URL + "/images/gallary/akagera.jpg"
+                        }
+                        srcThumb={
+                          process.env.PUBLIC_URL + "/images/gallary/akagera.jpg"
+                        }
+                        caption="Akagera"
+                      />
+                      <GalleryItem
+                        srcFull={
+                          process.env.PUBLIC_URL +
+                          "/images/gallary/Lake-Ruhondo-In-Rwanda.jpg"
+                        }
+                        srcThumb={
+                          process.env.PUBLIC_URL +
+                          "/images/gallary/Lake-Ruhondo-In-Rwanda.jpg"
+                        }
+                        caption="Lake Ruhondo"
+                      />
+                      <GalleryItem
+                        srcFull={
+                          process.env.PUBLIC_URL +
+                          "/images/gallary/Nyungwe-National-Park.jpg"
+                        }
+                        srcThumb={
+                          process.env.PUBLIC_URL +
+                          "/images/gallary/Nyungwe-National-Park.jpg"
+                        }
+                        caption="footerIMG"
+                      />
+                      <GalleryItem
+                        srcFull={
+                          process.env.PUBLIC_URL +
+                          "/images/gallary/fullsecrron06.png"
+                        }
+                        srcThumb={
+                          process.env.PUBLIC_URL + "/images/gallary/fg-6.png"
+                        }
+                        caption="footerIMG"
+                      />
                     </div>
                   </div>
                   {/* </SRLWrapper> */}
@@ -332,18 +286,7 @@ export const Footer: React.FC<any> = () => {
             <div className="row align-items-center justify-content-center">
               <div className="col-lg-4 col-md-6 order-lg-1 order-3 ">
                 <div className="copyright-link text-lg-start text-center">
-                  <p>
-                    &#169; {new Date().getFullYear()} Africa Wizzy Safaris
-                    {/* | Design By{" "}
-                    <a
-                      rel="noopener noreferrer"
-                      href="https://www.egenslab.com/"
-                      target="_blank"
-                    >
-                      {" "}
-                      Egens Lab
-                    </a> */}
-                  </p>
+                  <p>&#169; {new Date().getFullYear()} Africa Wizzy Safaris</p>
                 </div>
               </div>
               <div className="col-lg-4  order-lg-2 order-1">
@@ -351,7 +294,7 @@ export const Footer: React.FC<any> = () => {
                   <Link onClick={scrollTop} to={`${process.env.PUBLIC_URL}/`}>
                     <img
                       src={process.env.PUBLIC_URL + "/Logo.svg"}
-                      alt="FooterIMG"
+                      alt="Africa Wizzy Safaris"
                       style={{ height: "30px", borderRadius: "100%" }}
                       // className="w-20"
                     />
@@ -375,5 +318,19 @@ export const Footer: React.FC<any> = () => {
         </div>
       </div>
     </>
+  );
+};
+
+const GalleryItem: React.FC<any> = (props) => {
+  return (
+    <div className="footer-gallary-item">
+      <a
+        href={props.srcFull}
+        data-fancybox="footer"
+        data-caption={props.caption ? props.caption : "Caption "}
+      >
+        <img src={props.srcThumb} alt={props.caption} height={65} />
+      </a>
+    </div>
   );
 };

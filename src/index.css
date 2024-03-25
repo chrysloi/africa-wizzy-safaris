@@ -34,3 +34,20 @@ code {
   padding-bottom: 30px;
 }
 /*# sourceMappingURL=index.css.map */
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  /* border-radius: 50%; */
+  background-color: #25D366;
+  background: url('https://api.iconify.design/logos/whatsapp-icon.svg') no-repeat center center / contain;
+  content: url('https://api.iconify.design/logos/whatsapp-icon.svg');
+  color: #fff;
+  /* font-size: 24px; */
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+}

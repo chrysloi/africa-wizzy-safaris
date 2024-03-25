@@ -95,7 +95,7 @@ export const Header: React.FC<any> = () => {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         className={
           catagoryActive
             ? "category-sidebar-wrapper category-active"
@@ -217,7 +217,7 @@ export const Header: React.FC<any> = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <header>
         <div className="header-area header-style-three position-absolute w-100">
           <div className="container-fluid">
@@ -260,12 +260,12 @@ export const Header: React.FC<any> = () => {
                             </li>
                           </ul>
                         </div>
-                        <div
+                        {/* <div
                           className="category-toggle"
                           onClick={handleCatagorybtn}
                         >
                           <i className="bx bx-category" />
-                        </div>
+                        </div> */}
                       </div>
                       <Link
                         to={"#"}
@@ -472,12 +472,12 @@ export const Header: React.FC<any> = () => {
                     >
                       <i className="bx bx-search-alt" />
                     </div>
-                    <div
+                    {/* <div
                       className="category-toggle"
                       onClick={handleCatagorybtn}
                     >
                       <i className="bx bx-category" />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>

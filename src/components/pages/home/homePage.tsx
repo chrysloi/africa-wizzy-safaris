@@ -18,8 +18,8 @@ export const HomePage = () => {
       <PackageArea />
       <TopDestination />
       {/* <UpcomingTour /> */}
-      <OfferPackage />
-      <Testimonial />
+      {/* <OfferPackage /> */}
+      {/* <Testimonial /> */}
       {/* <Tourguide3 /> */}
       {/* <BlogArea3 /> */}
       {/* <MoreUpdate /> */}

@@ -6,8 +6,6 @@ import "./App.css";
 import "typeface-poppins";
 import { PrimaryColor } from "./utils/colors";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import routes from "./routes";
-import { AppHeader } from "./componentsOld/appheader";
 import { MainLayout } from "./components/layout/MainLayout";
 import { HomePage } from "./components/pages/home/homePage";
 import { Packages } from "./components/pages/packages/packages";

@@ -116,7 +116,15 @@ export const latestPackages = [
     price: "$299.00",
   },
 ];
+
 export const destination = [
+  {
+    image:
+      "https://ugandarwandagorillatours.com/wp-content/uploads/2019/09/Areial-View-Of-Kigali-1.jpg",
+    title: "Kigali",
+    description:
+      "Kigali is the capital city of Rwanda, roughly in the center of the country. It sprawls across numerous hills, ridges and valleys, and has a vibrant restaurant and nightlife scene.",
+  },
   {
     image:
       "https://ugandarwandagorillatours.com/wp-content/uploads/2019/09/Areial-View-Of-Kigali-1.jpg",

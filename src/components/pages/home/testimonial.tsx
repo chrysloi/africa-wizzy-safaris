@@ -43,8 +43,7 @@ export const Testimonial = () => {
               <div className="section-head-alpha text-lg-start text-center">
                 <h2 className="text-white">Travelers Review</h2>
                 <p className="text-white">
-                  Duis rutrum nisl urna maecenas vel libero faucibus nisi vene
-                  natis hendrerit aid lectus suspendissendt.
+                  Here is what our clients talk about the experience.
                 </p>
               </div>
             </div>
@@ -56,7 +55,6 @@ export const Testimonial = () => {
                   role="button"
                   aria-label="Previous slide"
                 >
-                  {" "}
                   <i className="bi bi-arrow-left" />
                 </div>
                 <div

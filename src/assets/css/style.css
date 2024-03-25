@@ -935,11 +935,11 @@ accordion defult style
 }
 
 .breadcrumb-style-one {
-  background-image: url(../../../public/images/banner/breadcrumb-bg.png);
+  background-image: url(../../../public/images/banner/Kigali.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 150px 0;
+  /* padding: 150px 0; */
 }
 
 .breadcrumb-style-one .breadcrumb-title {
@@ -2209,8 +2209,9 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-three .slider-bg-1 {
   padding: 300px 0px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../../public/images/banner/home3-banner1.png");
-  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../../public/images/banner/home3-banner1.png");
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../../public/images/banner/kcc.jpg");
+  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../../public/images/banner/kcc.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -2230,8 +2231,9 @@ header .header-style-four .nav-right .nav-right-hotline .hotline-info h6 a {
 .hero-style-three .slider-bg-3 {
   padding: 300px 0px;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../../public/images/banner/home3-banner3.png");
-  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../../public/images/banner/home3-banner3.png");
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 5, 15, 0.45)), to(rgba(0, 5, 15, 0.45))), url("../../../public/images/banner/twin-lakes-rwanda.jpg");
+  background: linear-gradient(rgba(0, 5, 15, 0.45), rgba(0, 5, 15, 0.45)), url("../../../public/images/banner/twin-lakes-rwanda.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
