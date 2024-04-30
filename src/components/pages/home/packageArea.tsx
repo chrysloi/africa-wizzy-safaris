@@ -61,49 +61,6 @@ export const PackageArea = () => {
                 />
               </div>
             ))}
-            {/* <div className="col-lg-4 col-md-6 col-sm-10  fadeffect">
-              <PackageCardBeta
-                image="/images/package/best-s2.png"
-                time="5 Day &amp; 4 night"
-                title="varius condimentum consequat frin Aenean pretium risus eu."
-                price="$120.00"
-              />
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10 fadeffect">
-              <PackageCardBeta
-                image="/images/package/best-s5.png"
-                time="2 Day &amp; 3 night"
-                title="Praesent sed elit mi. In risus nullaam efficitur non elementum eget."
-                price="$99.00"
-              />
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10 fadeffect">
-              <PackageCardBeta
-                image="/images/package/best-s5.png"
-                time="5 Day &amp; 6 night"
-                title="Sed ultricies sapien arcu, sed cong
-                      feugiat sapien dignissim id."
-                price="$87.00"
-              />
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10 fadeffect">
-              <PackageCardBeta
-                image="/images/package/best-s4.png"
-                time="3 Day &amp; 2 night"
-                title="Pellentesque habitant morbi malesua
-                tristique senectus et netus et."
-                price="$69.00"
-              />
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-10 fadeffect">
-              <PackageCardBeta
-                image="/images/package/best-s6.png"
-                time="3 Day &amp; 2 night"
-                title="Pellentesque habitant morbi malesua
-                tristique senectus et netus et."
-                price="$69.00"
-              />
-            </div> */}
           </div>
           <div className="package-page-btn text-center mt-60">
             <Link to="/package" className="button-fill-round">
@@ -119,14 +76,9 @@ export const PackageArea = () => {
 export const PackageCardBeta: React.FC<any> = (props) => {
   return (
     <>
-      <div className="package-card-beta" style={{ height: 430 }}>
+      <div className="package-card-beta" style={{ height: 480 }}>
         <div className="package-thumb" style={{ height: "65%" }}>
-          {/* <Link
-            to={`${process.env.PUBLIC_URL}/package-details`}
-            onClick={scrollTop}
-          ></Link> */}
           <img
-            // src={`${process.env.PUBLIC_URL} ${props.image}`}
             src={props.image}
             alt="package-details img"
             style={{
@@ -135,9 +87,6 @@ export const PackageCardBeta: React.FC<any> = (props) => {
               objectPosition: "top",
             }}
           />
-          {/* <p className="card-lavel">
-            <i className="bi bi-clock" /> <span>{props.time}</span>
-          </p> */}
         </div>
         <div
           className="package-card-body"

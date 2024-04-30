@@ -78,24 +78,14 @@ export const TestimonialArea: React.FC<any> = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="testimonial-card testimonial-card-alpha">
                   <div className="testimonial-overlay-img">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/images/reviewer/reviewer.png"
-                      }
-                      alt="images"
-                    />
+                    <img src={"/images/reviewer/reviewer.png"} alt="images" />
                   </div>
                   <div className="testimonial-card-top">
                     <div className="qoute-icon">
                       <i className="bx bxs-quote-left" />
                     </div>
                     <div className="testimonial-thumb">
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/reviewer/r-sm1.png"
-                        }
-                        alt="images"
-                      />
+                      <img src={"/images/reviewer/r-sm1.png"} alt="images" />
                     </div>
                     <h3 className="testimonial-count">01</h3>
                   </div>
@@ -134,24 +124,14 @@ export const TestimonialArea: React.FC<any> = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="testimonial-card testimonial-card-alpha">
                   <div className="testimonial-overlay-img">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/images/reviewer/reviewer.png"
-                      }
-                      alt="images"
-                    />
+                    <img src={"/images/reviewer/reviewer.png"} alt="images" />
                   </div>
                   <div className="testimonial-card-top">
                     <div className="qoute-icon">
                       <i className="bx bxs-quote-left" />
                     </div>
                     <div className="testimonial-thumb">
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/reviewer/r-sm2.png"
-                        }
-                        alt="images"
-                      />
+                      <img src={"/images/reviewer/r-sm2.png"} alt="images" />
                     </div>
                     <h3 className="testimonial-count">02</h3>
                   </div>
@@ -190,24 +170,14 @@ export const TestimonialArea: React.FC<any> = () => {
               <SwiperSlide className="swiper-slide">
                 <div className="testimonial-card testimonial-card-alpha">
                   <div className="testimonial-overlay-img">
-                    <img
-                      src={
-                        process.env.PUBLIC_URL + "/images/reviewer/reviewer.png"
-                      }
-                      alt="images"
-                    />
+                    <img src={"/images/reviewer/reviewer.png"} alt="images" />
                   </div>
                   <div className="testimonial-card-top">
                     <div className="qoute-icon">
                       <i className="bx bxs-quote-left" />
                     </div>
                     <div className="testimonial-thumb">
-                      <img
-                        src={
-                          process.env.PUBLIC_URL + "/images/reviewer/r-sm3.png"
-                        }
-                        alt="images"
-                      />
+                      <img src={"/images/reviewer/r-sm3.png"} alt="images" />
                     </div>
                     <h3 className="testimonial-count">03</h3>
                   </div>

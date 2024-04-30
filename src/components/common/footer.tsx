@@ -15,33 +15,30 @@ export const Footer: React.FC<any> = () => {
       <div className="footer-area" style={{ marginTop: "20px" }}>
         <div className="footer-main-wrapper">
           <div className="footer-vactor">
-            <img
-              src={process.env.PUBLIC_URL + "/images/banner/footer-bg.png"}
-              alt="FooterIMG"
-            />
+            <img src={"/images/banner/footer-bg.png"} alt="FooterIMG" />
           </div>
           <div className="container">
             <div className="row justify-content-center g-4">
               <div className="col-lg-4">
                 <div className="footer-about text-lg-start text-center">
-                  <p>
+                  {/* <p>
                     Duis rutrum nisl urna. Maecenas vel libero faucibus nisi
                     venenatis hendrerit a id lectus. Suspendissendt molestie
                     turpis nec lacinia vehicula.
-                  </p>
+                  </p> */}
                   <div className="footer-social-wrap">
                     <h5>Follow Us On:</h5>
                     <ul className="footer-social-links justify-content-lg-start justify-content-center">
                       <li>
                         <a
                           rel="noopener noreferrer"
-                          href="https://www.instagram.com/"
+                          href="https://instagram.com/africa_wizzy_safaris?igshid=YmM0MjE2YWMzOA=="
                           target="_blank"
                         >
                           <i className="bx bxl-instagram" />
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           rel="noopener noreferrer"
                           href="https://www.facebook.com/"
@@ -49,11 +46,11 @@ export const Footer: React.FC<any> = () => {
                         >
                           <i className="bx bxl-facebook" />
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           rel="noopener noreferrer"
-                          href="https://www.twitter.com/"
+                          href="https://twitter.com/africa_wizzy"
                           target="_blank"
                         >
                           <i className="bx bxl-twitter" />
@@ -62,13 +59,13 @@ export const Footer: React.FC<any> = () => {
                       <li>
                         <a
                           rel="noopener noreferrer"
-                          href="https://www.whatsapp.com/"
+                          href="https://web.whatsapp.com/send?phone=+250786384595&text=Hello%21+I+have+a+question.&type=phone_number&app_absent=0"
                           target="_blank"
                         >
                           <i className="bx bxl-whatsapp" />
                         </a>
                       </li>
-                      <li>
+                      {/* <li>
                         <a
                           rel="noopener noreferrer"
                           href="https://www.pinterest.com/"
@@ -77,7 +74,7 @@ export const Footer: React.FC<any> = () => {
                         >
                           <i className="bx bxl-pinterest-alt" />
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -87,103 +84,39 @@ export const Footer: React.FC<any> = () => {
                   <h3 className="footer-widget-title">Quick Link</h3>
                   <ul className="footer-links">
                     <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/about`}
-                      >
-                        About Us
+                      <Link onClick={scrollTop} to={`/`}>
+                        Home
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/package`}
-                      >
-                        Tour Package
+                      <Link onClick={scrollTop} to={`/package`}>
+                        Package
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/destination`}
-                      >
-                        Destination
+                      <Link onClick={scrollTop} to={`/contact`}>
+                        Contact us
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/guide`}
-                      >
+                    {/* <li>
+                      <Link onClick={scrollTop} to={`/guide`}>
                         Tour Guide
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/package-details`}
-                      >
+                      <Link onClick={scrollTop} to={`/package-details`}>
                         Booking Process
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/blog`}
-                      >
+                      <Link onClick={scrollTop} to={`/blog`}>
                         Blog
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
-              <div className="col-lg-2 col-md-4">
-                {/* <div className="footer-widget">
-                  <h4 className="footer-widget-title">Tour Type</h4>
-                  <ul className="footer-links">
-                    <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/package`}
-                      >
-                        Wild &amp; Adventure Tours
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/package`}
-                      >
-                        Group Tour
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/package`}
-                      >
-                        Seasonal Tours
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/package`}
-                      >
-                        Relaxation Tours
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        onClick={scrollTop}
-                        to={`${process.env.PUBLIC_URL}/package`}
-                      >
-                        Family Friendly Tours
-                      </Link>
-                    </li>
-                  </ul>
-                </div> */}
-              </div>
+              <div className="col-lg-2 col-md-4"></div>
               <>
                 <div className="col-lg-4 col-md-8">
                   {/* <SRLWrapper> */}
@@ -191,65 +124,34 @@ export const Footer: React.FC<any> = () => {
                     <h4 className="footer-widget-title text-center">Gallery</h4>
                     <div className="footer-gallary-grid">
                       <GalleryItem
-                        srcFull={
-                          process.env.PUBLIC_URL +
-                          "/images/gallary/RW_KIGALI.jpg"
-                        }
-                        srcThumb={
-                          process.env.PUBLIC_URL +
-                          "/images/gallary/RW_KIGALI.jpg"
-                        }
+                        srcFull={"/images/gallary/RW_KIGALI.jpg"}
+                        srcThumb={"/images/gallary/RW_KIGALI.jpg"}
                         caption="Kigali"
                       />
                       <GalleryItem
-                        srcFull={
-                          process.env.PUBLIC_URL + "/images/gallary/Musanze.jpg"
-                        }
-                        srcThumb={
-                          process.env.PUBLIC_URL + "/images/gallary/Musanze.jpg"
-                        }
+                        srcFull={"/images/gallary/Musanze.jpg"}
+                        srcThumb={"/images/gallary/Musanze.jpg"}
                         caption="Musanze"
                         height={75}
                       />
                       <GalleryItem
-                        srcFull={
-                          process.env.PUBLIC_URL + "/images/gallary/akagera.jpg"
-                        }
-                        srcThumb={
-                          process.env.PUBLIC_URL + "/images/gallary/akagera.jpg"
-                        }
+                        srcFull={"/images/gallary/akagera.jpg"}
+                        srcThumb={"/images/gallary/akagera.jpg"}
                         caption="Akagera"
                       />
                       <GalleryItem
-                        srcFull={
-                          process.env.PUBLIC_URL +
-                          "/images/gallary/Lake-Ruhondo-In-Rwanda.jpg"
-                        }
-                        srcThumb={
-                          process.env.PUBLIC_URL +
-                          "/images/gallary/Lake-Ruhondo-In-Rwanda.jpg"
-                        }
+                        srcFull={"/images/gallary/Lake-Ruhondo-In-Rwanda.jpg"}
+                        srcThumb={"/images/gallary/Lake-Ruhondo-In-Rwanda.jpg"}
                         caption="Lake Ruhondo"
                       />
                       <GalleryItem
-                        srcFull={
-                          process.env.PUBLIC_URL +
-                          "/images/gallary/Nyungwe-National-Park.jpg"
-                        }
-                        srcThumb={
-                          process.env.PUBLIC_URL +
-                          "/images/gallary/Nyungwe-National-Park.jpg"
-                        }
+                        srcFull={"/images/gallary/Nyungwe-National-Park.jpg"}
+                        srcThumb={"/images/gallary/Nyungwe-National-Park.jpg"}
                         caption="footerIMG"
                       />
                       <GalleryItem
-                        srcFull={
-                          process.env.PUBLIC_URL +
-                          "/images/gallary/fullsecrron06.png"
-                        }
-                        srcThumb={
-                          process.env.PUBLIC_URL + "/images/gallary/fg-6.png"
-                        }
+                        srcFull={"/images/gallary/fullsecrron06.png"}
+                        srcThumb={"/images/gallary/fg-6.png"}
                         caption="footerIMG"
                       />
                     </div>
@@ -269,14 +171,10 @@ export const Footer: React.FC<any> = () => {
                 </li>
                 <li>
                   <i className="bi bi-envelope-open" />{" "}
-                  <a href="mailto:info@africawizzysafaris.rw">
-                    info@africawizzysafaris.rw
+                  <a href="mailto:info@africawizzysafaris.com">
+                    info@africawizzysafaris.com
                   </a>
                 </li>
-                {/* <li>
-                  <i className="bi bi-geo-alt" />{" "}
-                  <Link to={"#"}>2752 Willison Street Eagan, United State</Link>
-                </li> */}
               </ul>
             </div>
           </div>
@@ -291,9 +189,9 @@ export const Footer: React.FC<any> = () => {
               </div>
               <div className="col-lg-4  order-lg-2 order-1">
                 <div className="footer-logo text-center">
-                  <Link onClick={scrollTop} to={`${process.env.PUBLIC_URL}/`}>
+                  <Link onClick={scrollTop} to={`/`}>
                     <img
-                      src={process.env.PUBLIC_URL + "/Logo.svg"}
+                      src={"/Logo.svg"}
                       alt="Africa Wizzy Safaris"
                       style={{ height: "30px", borderRadius: "100%" }}
                       // className="w-20"

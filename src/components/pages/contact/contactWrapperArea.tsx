@@ -10,7 +10,7 @@ export const ContactWrapperArea = () => {
             <div className="col-lg-6">
               <div className="contatc-intro-figure">
                 <img
-                  src={process.env.PUBLIC_URL + "/images/banner/contact-bg.png"}
+                  src={"/images/banner/contact-bg.png"}
                   alt="ContactBannerIMG"
                   className="img-fluid"
                 />
@@ -22,10 +22,9 @@ export const ContactWrapperArea = () => {
                 <ul>
                   <li>
                     <h6>Let’s Talk</h6>
-                    <a href="mailto:info@africawizzysafaris.rw">
-                      info@africawizzysafaris.rw
+                    <a href="mailto:info@africawizzysafaris.com">
+                      info@africawizzysafaris.com
                     </a>
-                    {/* <a href="mailto:support@example.com">info@support.com</a> */}
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
@@ -82,7 +81,7 @@ export const ContactWrapperArea = () => {
         <div className="container pt-110">
           <form onSubmit={(e) => e.preventDefault()} id="contact_form">
             <div className="contact-form-wrap">
-              <h4>Get a free key stroke quote now</h4>
+              <h4>Leave us a note</h4>
               <p>
                 Your email address will not be published. Required fields are
                 marked *

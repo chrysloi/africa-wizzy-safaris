@@ -36,7 +36,7 @@ export const HeroArea = () => {
     <>
       <div className="hero-area hero-style-three">
         <img
-          src={process.env.PUBLIC_URL + "/images/banner/rwanda_air_takeoff.png"}
+          src={"/images/banner/rwanda_air_takeoff.png"}
           className="img-fluid banner-plane"
           alt="banners-img"
           style={{ height: 70 }}
@@ -49,6 +49,7 @@ export const HeroArea = () => {
                   to={
                     "https://instagram.com/africa_wizzy_safaris?igshid=YmM0MjE2YWMzOA=="
                   }
+                  target="_blank"
                 >
                   Instagram
                 </Link>
@@ -56,12 +57,15 @@ export const HeroArea = () => {
               <li>
                 <Link
                   to={"https://www.linkedin.com/in/uwimpuhwe-aline-143568270"}
+                  target="_blank"
                 >
                   LinkedIn
                 </Link>
               </li>
               <li>
-                <Link to={"https://twitter.com/africa_wizzy"}>Twitter</Link>
+                <Link to={"https://twitter.com/africa_wizzy"} target="_blank">
+                  Twitter
+                </Link>
               </li>
             </ul>
           </div>

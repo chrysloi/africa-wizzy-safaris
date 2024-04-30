@@ -2017,7 +2017,7 @@ header .header-style-four {
         display: inline-block;
         padding-left: 20px;
         &::before{
-          content: url('../../../public/images/icons/list-style.svg');
+          content: url('images/icons/list-style.svg');
           position: absolute;
           top: 50%;
           transform: translateY(-50%);

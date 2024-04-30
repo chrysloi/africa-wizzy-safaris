@@ -10,11 +10,11 @@ export const TopDestination = () => {
             <div className="col-lg-8 col-sm-10 " style={{}}>
               <div className="section-head-alpha text-center mx-auto">
                 <h2>Top Destination</h2>
-                <p>
+                {/* <p>
                   Duis rutrum nisl urna. Maecenas vel libero faucibus nisi
                   venenatis hendrerit a id lectus. Suspendissendt blandit
                   interdum.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
