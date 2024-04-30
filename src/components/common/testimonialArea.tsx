@@ -1,7 +1,9 @@
 import React from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Autoplay, Navigation } from "swiper";
+import SwiperCore from "swiper";
+import { Autoplay, Navigation } from "swiper/modules";
+
 SwiperCore.use([Navigation, Autoplay]);
 
 export const TestimonialArea: React.FC<any> = () => {

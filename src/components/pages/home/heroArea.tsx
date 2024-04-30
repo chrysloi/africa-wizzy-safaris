@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import Swiper core and required modules
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { EffectFade, Navigation, Pagination } from "swiper";
+import SwiperCore from "swiper";
+import { EffectFade, Navigation, Pagination } from "swiper/modules";
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, EffectFade]);
 
